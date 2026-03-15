@@ -1,0 +1,834 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évasion Tropicale en Malaisie : Culture, Nature et Détente </title>
+    <link rel="icon" type="image/png" href="https://api.mytripplanner.fr/api/files/pbc_1321337024/47976eld0rscwbc/favicon_ytvg76obie.svg?thumb=100x100&token=" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée à Kuala Lumpur et première immersion</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Icônes de Kuala Lumpur et sérénité urbaine</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Nature en ville et immersion culturelle</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Architecture moderne et croisière sereine à Putrajaya</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Voyage vers Malacca et charme historique</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Trésors historiques de Malacca</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Matinée tranquille et voyage vers les Cameron Highlands</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Plantations de thé et paysages verdoyants</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Forêt moussue et jardins fleuris</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Vol vers Penang et charme de George Town</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Art de rue et patrimoine colonial</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Temples majestueux et vues panoramiques</a>
+            
+                <a href="#jour-13" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J13 Détente balnéaire à Batu Ferringhi</a>
+            
+                <a href="#jour-14" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J14 Vol vers Langkawi et paradis insulaire</a>
+            
+                <a href="#jour-15" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J15 SkyBridge et vues à couper le souffle</a>
+            
+                <a href="#jour-16" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J16 Aventure insulaire et plages secrètes</a>
+            
+                <a href="#jour-17" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J17 Exploration des mangroves et sources chaudes</a>
+            
+                <a href="#jour-18" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J18 Retour à Kuala Lumpur et soirée libre</a>
+            
+                <a href="#jour-19" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J19 Journée bien-être et relaxation</a>
+            
+                <a href="#jour-20" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J20 Immersion culinaire et adieux</a>
+            
+                <a href="#jour-21" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J21 Derniers achats et préparation au départ</a>
+            
+                <a href="#jour-22" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J22 Départ de Kuala Lumpur</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">MALAISIE</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Évasion Tropicale en Malaisie : Culture, Nature et Détente</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ Du 20 Août au 11 Septembre 2026</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 Environ 3200-3500 €/personne</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 16h30 (format: Xh depuis Paris, france)</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+      <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+      </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée à Kuala Lumpur et première immersion</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après un long vol, la première journée est dédiée à une arrivée en douceur dans la capitale malaisienne. Installez-vous confortablement et profitez d'une balade relaxante pour vous imprégner de l'ambiance locale. Laissez-vous porter par les sons et les couleurs de cette ville vibrante.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛬</strong>: Arrivée à l'aéroport international de Kuala Lumpur (KUL).</li><li><strong>🛏️</strong>: Transfert et installation à votre hôtel au cœur de la ville.</li><li><strong>🚶‍♂️</strong>: Balade digestive et découverte des environs de l'hôtel, dîner léger.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ À savoir</p>
+                                <p class="text-gray-700">Le décalage horaire avec la Malaisie est de +6 heures en été. Prévoyez de vous hydrater et de vous reposer pour minimiser le jet lag.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Icônes de Kuala Lumpur et sérénité urbaine</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Découvrez les symboles architecturaux de Kuala Lumpur, des tours jumelles emblématiques aux grottes sacrées de Batu Caves. La journée est équilibrée entre exploration urbaine et moments de calme, offrant un aperçu de la diversité culturelle et spirituelle de la Malaisie.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🏙️</strong>: Visite des tours jumelles Petronas, symbole de la modernité malaisienne. Admirez leur grandeur depuis le parc KLCC.</li><li><strong>🧘‍♀️</strong>: Ascension des marches colorées des grottes de Batu Caves, un site hindou sacré et impressionnant.</li><li><strong>🛍️</strong>: Détente et shopping au centre commercial Suria KLCC ou au Central Market pour des souvenirs artisanaux.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Conseil</p>
+                                <p class="text-gray-700">Pour les Batu Caves, portez des vêtements respectueux (épaules et genoux couverts) et préparez-vous à monter de nombreuses marches. Des singes espiègles sont souvent présents.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Nature en ville et immersion culturelle</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Explorez les poumons verts de Kuala Lumpur avec une promenade apaisante dans ses jardins botaniques. Plongez ensuite dans l'histoire et la culture malaisienne en visitant des sites emblématiques, offrant un contraste rafraîchissant avec l'agitation urbaine.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🌿</strong>: Promenade relaxante dans les Jardins Botaniques Perdana, un havre de paix au cœur de la ville.</li><li><strong>🕌</strong>: Visite de la Mosquée Jamek, l'une des plus anciennes de KL, et découverte de son architecture mauresque.</li><li><strong>🖼️</strong>: Exploration du Musée National de Malaisie pour comprendre l'histoire et le patrimoine du pays.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌸 Détente</p>
+                                <p class="text-gray-700">Les Jardins Botaniques Perdana sont parfaits pour une matinée tranquille, loin du bruit de la ville. Ne manquez pas le jardin aux orchidées.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Architecture moderne et croisière sereine à Putrajaya</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Échappez à l'agitation de la capitale pour une journée à Putrajaya, la ville administrative futuriste de la Malaisie. Admirez son architecture impressionnante et profitez d'une croisière paisible sur le lac, offrant une perspective unique sur ses monuments.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗</strong>: Excursion d'une journée à Putrajaya, la ville jardin et intelligente de la Malaisie.</li><li><strong>🕌</strong>: Visite de la Mosquée Putra (Mosquée Rose) et du Perdana Putra (bureau du Premier Ministre) de l'extérieur.</li><li><strong>🚤</strong>: Croisière relaxante sur le lac de Putrajaya pour admirer les ponts et les bâtiments depuis l'eau.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Photographie</p>
+                                <p class="text-gray-700">Les ponts de Putrajaya offrent des opportunités de photos spectaculaires, surtout au coucher du soleil. La Mosquée Putra est particulièrement photogénique.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Voyage vers Malacca et charme historique</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Embarquez pour un voyage vers Malacca, une ville classée au patrimoine mondial de l'UNESCO, riche en histoire et en culture. Installez-vous et commencez à explorer ses rues pittoresques, imprégnées de l'héritage colonial et de l'influence des différentes civilisations.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚌</strong>: Transfert en bus confortable de Kuala Lumpur à Malacca (environ 2-3 heures).</li><li><strong>🛏️</strong>: Installation à votre hôtel dans le quartier historique de Malacca.</li><li><strong>🚶‍♀️</strong>: Première balade décontractée sur Jonker Street, le cœur vibrant de la vieille ville, et dîner.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍽️ Gastronomie</p>
+                                <p class="text-gray-700">Malacca est réputée pour sa cuisine Nyonya. Ne manquez pas de goûter le 'Chicken Rice Ball' ou le 'Laksa Nyonya' sur Jonker Street.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Trésors historiques de Malacca</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez au cœur de l'histoire de Malacca en explorant ses sites emblématiques. Des vestiges coloniaux aux temples anciens, chaque coin de rue raconte une histoire. Terminez la journée par une croisière paisible sur la rivière, offrant une perspective différente sur la ville.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>⛪</strong>: Visite du Stadthuys (Hôtel de Ville hollandais) et de l'église du Christ, symboles de l'ère coloniale.</li><li><strong>🏰</strong>: Exploration des ruines de la forteresse A Famosa et de l'église Saint-Paul, offrant des vues panoramiques.</li><li><strong>🛶</strong>: Croisière relaxante sur la rivière Malacca, admirant les fresques murales et l'architecture le long des berges.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚶‍♂️ Exploration</p>
+                                <p class="text-gray-700">Malacca est une ville très agréable à explorer à pied. Prévoyez de bonnes chaussures et de l'eau, surtout en milieu de journée.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Matinée tranquille et voyage vers les Cameron Highlands</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez d'une dernière matinée paisible à Malacca pour flâner ou revisiter un lieu coup de cœur. Ensuite, préparez-vous pour un changement de décor radical en vous dirigeant vers les Cameron Highlands, une région montagneuse réputée pour ses plantations de thé et son climat frais.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚶‍♀️</strong>: Matinée libre à Malacca pour un dernier café ou l'achat de souvenirs.</li><li><strong>🚌</strong>: Transfert en bus de Malacca à Tanah Rata (Cameron Highlands), un trajet pittoresque (environ 4-5 heures).</li><li><strong>🛏️</strong>: Installation à l'hôtel à Tanah Rata et soirée relaxante dans l'air frais des montagnes.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌡️ Climat</p>
+                                <p class="text-gray-700">Les Cameron Highlands ont un climat beaucoup plus frais que le reste de la Malaisie. Prévoyez une petite laine pour les soirées et les matinées.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Plantations de thé et paysages verdoyants</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Réveillez-vous au cœur des Cameron Highlands et laissez-vous enchanter par les paysages vallonnés des plantations de thé. Profitez d'une visite guidée pour découvrir le processus de fabrication du thé et dégustez une tasse fraîchement infusée, entouré par la nature luxuriante.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🌿</strong>: Visite de la plantation de thé Boh Sungai Palas, avec une promenade douce à travers les champs de thé.</li><li><strong>☕</strong>: Dégustation de thé et pause gourmande au café de la plantation, avec vue imprenable.</li><li><strong>🍓</strong>: Visite d'une ferme de fraises pour cueillir vos propres fruits ou déguster des produits locaux à base de fraises.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚶‍♀️ Randonnée douce</p>
+                                <p class="text-gray-700">De nombreux sentiers de randonnée doux sont disponibles dans les plantations de thé. C'est une excellente façon de profiter du paysage sans effort excessif.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Forêt moussue et jardins fleuris</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Explorez la mystérieuse Forêt Moussue, un écosystème unique où la nature règne en maître. Poursuivez votre journée par la découverte de jardins colorés, offrant une expérience sensorielle apaisante et une immersion totale dans la biodiversité des Cameron Highlands.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🌳</strong>: Promenade guidée (facultative) dans la Forêt Moussue (Mossy Forest), une expérience féerique et rafraîchissante.</li><li><strong>🦋</strong>: Visite d'une ferme aux papillons ou d'un jardin de fleurs pour admirer la faune et la flore locales.</li><li><strong>💆‍♀️</strong>: Après-midi libre pour se détendre à l'hôtel, profiter d'un massage ou explorer Tanah Rata à votre rythme.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👟 Équipement</p>
+                                <p class="text-gray-700">Pour la Forêt Moussue, prévoyez des chaussures confortables et antidérapantes, car les sentiers peuvent être humides et glissants.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Vol vers Penang et charme de George Town</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après une dernière bouffée d'air frais des montagnes, prenez la route vers l'aéroport pour un court vol vers Penang. Arrivez à George Town, une ville vibrante et classée à l'UNESCO, célèbre pour son art de rue et sa cuisine de rue exceptionnelle. Installez-vous et commencez à explorer.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗</strong>: Transfert des Cameron Highlands à l'aéroport d'Ipoh (environ 2-3 heures).</li><li><strong>✈️</strong>: Vol domestique d'Ipoh à Penang (environ 30-45 minutes).</li><li><strong>🛏️</strong>: Installation à l'hôtel à George Town et première exploration des rues animées, à la recherche de street art.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍜 Cuisine de rue</p>
+                                <p class="text-gray-700">Penang est un paradis pour les gourmands. Ne manquez pas de goûter le Char Kway Teow, l'Assam Laksa ou le Hokkien Mee dans les hawker centers.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Art de rue et patrimoine colonial</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez dans l'atmosphère unique de George Town en partant à la chasse aux célèbres fresques murales et installations en fer forgé. Découvrez l'héritage colonial de la ville à travers ses bâtiments historiques et ses quartiers ethniques, offrant un mélange fascinant de cultures.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🖼️</strong>: Chasse aux trésors artistiques : découverte des célèbres fresques murales et sculptures en fer forgé de George Town.</li><li><strong>🏘️</strong>: Visite des Clan Jetties, des villages sur pilotis habités par des familles chinoises depuis des générations.</li><li><strong>🏛️</strong>: Exploration de la Cheong Fatt Tze Mansion (Blue Mansion), un joyau architectural chinois.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚶‍♀️ Conseil</p>
+                                <p class="text-gray-700">Louez un vélo ou marchez pour explorer George Town. C'est la meilleure façon de découvrir ses ruelles cachées et ses trésors artistiques.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Temples majestueux et vues panoramiques</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Montez au sommet de Penang Hill pour profiter d'une vue imprenable sur l'île et la ville. Ensuite, explorez le magnifique temple de Kek Lok Si, un complexe bouddhiste impressionnant. La journée est un mélange de spiritualité, de paysages grandioses et de sérénité.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>⛰️</strong>: Ascension de Penang Hill en funiculaire pour profiter de l'air frais et des vues panoramiques sur George Town.</li><li><strong>🙏</strong>: Visite du temple Kek Lok Si, le plus grand temple bouddhiste de Malaisie, avec ses pagodes et statues impressionnantes.</li><li><strong>🌳</strong>: Promenade relaxante dans les Jardins Botaniques de Penang, un espace vert paisible.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☀️ Météo</p>
+                                <p class="text-gray-700">Le sommet de Penang Hill est souvent plus frais. Prévoyez une petite veste si vous êtes sensible au froid.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-13" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 13</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Détente balnéaire à Batu Ferringhi</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Échappez à l'agitation de la ville pour une journée de pure détente sur les plages de Batu Ferringhi. Profitez du soleil, de la mer et des activités nautiques douces. Terminez la journée par un dîner les pieds dans le sable, en admirant le coucher de soleil.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗</strong>: Transfert vers Batu Ferringhi, la principale zone balnéaire de Penang.</li><li><strong>🏖️</strong>: Matinée de détente sur la plage, baignade ou lecture à l'ombre d'un palmier.</li><li><strong>🌅</strong>: Promenade sur le marché de nuit de Batu Ferringhi et dîner de fruits de mer frais au bord de la mer.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour13.jpg" class="w-full h-64 object-cover" alt="Jour 13">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🧴 Protection</p>
+                                <p class="text-gray-700">N'oubliez pas votre crème solaire, un chapeau et des lunettes de soleil. Le soleil tropical est intense.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-14" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 14</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Vol vers Langkawi et paradis insulaire</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Quittez Penang pour un court vol vers Langkawi, un archipel idyllique réputé pour ses plages de sable blanc et ses forêts tropicales. Installez-vous dans votre hébergement et laissez-vous bercer par l'ambiance décontractée de cette île paradisiaque, parfaite pour la relaxation.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>✈️</strong>: Vol domestique de Penang à Langkawi (environ 30 minutes).</li><li><strong>🛏️</strong>: Transfert et installation à votre hôtel à Langkawi, idéalement près d'une plage comme Cenang Beach.</li><li><strong>🌅</strong>: Soirée libre, dîner au bord de la mer et promenade sur la plage au coucher du soleil.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour14.jpg" class="w-full h-64 object-cover" alt="Jour 14">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💸 Duty-Free</p>
+                                <p class="text-gray-700">Langkawi est une île hors taxes. Profitez-en pour acheter des chocolats, de l'alcool ou des parfums à des prix avantageux.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-15" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 15</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">SkyBridge et vues à couper le souffle</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Découvrez l'une des attractions les plus spectaculaires de Langkawi : le téléphérique et le SkyBridge. Montez au sommet pour des vues panoramiques incroyables sur l'archipel et la forêt tropicale. La journée est dédiée à l'émerveillement et à la contemplation des paysages.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚠</strong>: Ascension en téléphérique (SkyCab) jusqu'au sommet du mont Machinchang, offrant des vues spectaculaires.</li><li><strong>🌉</strong>: Traversée du Langkawi SkyBridge, un pont suspendu courbé au-dessus de la jungle, pour des sensations douces et des panoramas uniques.</li><li><strong>🛍️</strong>: Exploration de l'Oriental Village, un complexe de boutiques et de restaurants au pied du téléphérique.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour15.jpg" class="w-full h-64 object-cover" alt="Jour 15">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⚠️ Attention</p>
+                                <p class="text-gray-700">Le SkyBridge peut être fermé en cas de vent fort ou de pluie. Vérifiez les conditions météorologiques avant de vous y rendre.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-16" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 16</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Aventure insulaire et plages secrètes</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Embarquez pour une excursion relaxante d'île en île, découvrant des plages isolées et des lagons cachés. Profitez de la baignade, de la plongée avec tuba et de l'observation des aigles. C'est une journée dédiée à la beauté naturelle de l'archipel de Langkawi et à la tranquillité.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚤</strong>: Excursion d'île en île (Island Hopping Tour) vers des îles comme Dayang Bunting et Beras Basah.</li><li><strong>🏊‍♀️</strong>: Baignade et détente sur des plages immaculées, avec possibilité de plongée avec tuba douce.</li><li><strong>🦅</strong>: Observation des aigles, emblèmes de Langkawi, lors d'une séance de nourrissage (à distance respectueuse).</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour16.jpg" class="w-full h-64 object-cover" alt="Jour 16">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🐠 Faune marine</p>
+                                <p class="text-gray-700">Les eaux autour de Langkawi abritent une vie marine riche. N'oubliez pas votre masque et tuba pour explorer les fonds marins.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-17" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 17</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Exploration des mangroves et sources chaudes</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Partez à la découverte de l'écosystème fascinant des mangroves du Kilim Geoforest Park lors d'une croisière paisible. Observez la faune locale et terminez la journée par une expérience relaxante aux sources chaudes naturelles, pour une immersion totale dans la nature de Langkawi.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛶</strong>: Croisière relaxante dans les mangroves du Kilim Geoforest Park, observation de la faune (singes, oiseaux).</li><li><strong>♨️</strong>: Détente aux sources chaudes naturelles de Ayer Hangat, pour un moment de relaxation et de bien-être.</li><li><strong>💆‍♀️</strong>: Après-midi libre pour profiter de la plage, d'un massage ou d'une activité douce de votre choix.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour17.jpg" class="w-full h-64 object-cover" alt="Jour 17">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🦟 Insectes</p>
+                                <p class="text-gray-700">Lors de la visite des mangroves, prévoyez un répulsif anti-moustiques, surtout en fin de journée.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-18" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 18</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Retour à Kuala Lumpur et soirée libre</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après avoir profité des charmes de Langkawi, il est temps de retourner à Kuala Lumpur. Le vol domestique vous ramènera à la capitale pour une soirée libre. Profitez-en pour vous reposer, faire du shopping de dernière minute ou savourer un dîner mémorable.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>✈️</strong>: Vol domestique de Langkawi à Kuala Lumpur (environ 1 heure).</li><li><strong>🛏️</strong>: Transfert et installation à votre hôtel à Kuala Lumpur.</li><li><strong>🌃</strong>: Soirée libre pour vous détendre, dîner dans un quartier animé comme Bukit Bintang ou faire du shopping.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour18.jpg" class="w-full h-64 object-cover" alt="Jour 18">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛍️ Shopping</p>
+                                <p class="text-gray-700">Kuala Lumpur offre de nombreuses options de shopping, des centres commerciaux de luxe aux marchés locaux. C'est le moment idéal pour les derniers souvenirs.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-19" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 19</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Journée bien-être et relaxation</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Offrez-vous une journée de pure relaxation et de bien-être après ces jours d'exploration. Profitez d'un spa traditionnel malaisien, d'une séance de yoga ou d'une simple promenade dans un parc. C'est l'occasion de recharger vos batteries avant le départ.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>💆‍♀️</strong>: Matinée dédiée à un soin spa traditionnel malaisien ou un massage relaxant.</li><li><strong>🧘‍♀️</strong>: Séance de yoga ou méditation dans un centre de bien-être ou un parc paisible.</li><li><strong>📚</strong>: Après-midi libre pour lire, se détendre au bord de la piscine de l'hôtel ou revisiter un lieu coup de cœur.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour19.jpg" class="w-full h-64 object-cover" alt="Jour 19">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌸 Bien-être</p>
+                                <p class="text-gray-700">De nombreux hôtels à Kuala Lumpur proposent des spas de qualité. Renseignez-vous à l'avance pour réserver votre soin.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-20" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 20</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Immersion culinaire et adieux</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez une dernière fois dans la richesse de la cuisine malaisienne avec un cours de cuisine ou une exploration des marchés locaux. Profitez d'un dîner d'adieu mémorable, savourant les saveurs qui ont marqué votre voyage. C'est une journée pour célébrer les découvertes culinaires.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🧑‍🍳</strong>: Cours de cuisine malaisienne pour apprendre à préparer quelques spécialités locales (optionnel).</li><li><strong>🌶️</strong>: Visite d'un marché local pour découvrir les épices et ingrédients typiques de la cuisine malaisienne.</li><li><strong>🍽️</strong>: Dîner d'adieu dans un restaurant raffiné ou un hawker center pour une dernière expérience culinaire authentique.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour20.jpg" class="w-full h-64 object-cover" alt="Jour 20">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌶️ Saveurs</p>
+                                <p class="text-gray-700">La cuisine malaisienne est un mélange d'influences malaises, chinoises et indiennes. N'hésitez pas à goûter à tout, même si c'est épicé !</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-21" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 21</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derniers achats et préparation au départ</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez de cette dernière journée complète pour faire les derniers achats de souvenirs ou revisiter un quartier que vous avez particulièrement apprécié. Préparez tranquillement vos bagages, en vous remémorant les merveilleux moments passés en Malaisie. Une journée douce avant le grand départ.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛍️</strong>: Matinée dédiée aux derniers achats de souvenirs ou de produits locaux dans les centres commerciaux ou marchés.</li><li><strong>🚶‍♀️</strong>: Promenade tranquille dans un quartier que vous avez aimé ou découverte d'un nouveau coin de la ville.</li><li><strong>🧳</strong>: Préparation des bagages et dîner léger avant le vol du lendemain.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour21.jpg" class="w-full h-64 object-cover" alt="Jour 21">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Souvenirs</p>
+                                <p class="text-gray-700">Le Central Market est un excellent endroit pour trouver des souvenirs artisanaux, des batiks aux sculptures en bois.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-22" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 22</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Départ de Kuala Lumpur</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">C'est le jour du départ. Profitez d'un dernier petit-déjeuner malaisien avant de vous rendre à l'aéroport. Emportez avec vous les souvenirs inoubliables de ce voyage en Malaisie, un pays aux mille facettes, entre modernité, traditions et nature luxuriante.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🍳</strong>: Dernier petit-déjeuner malaisien à l'hôtel ou dans un café local.</li><li><strong>🚗</strong>: Transfert à l'aéroport international de Kuala Lumpur (KUL).</li><li><strong>🛫</strong>: Enregistrement et vol retour vers Paris.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Malaisie-iw629qc873j8wl9/main/jour22.jpg" class="w-full h-64 object-cover" alt="Jour 22">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏰ Timing</p>
+                                <p class="text-gray-700">Prévoyez suffisamment de temps pour le transfert vers l'aéroport et les formalités d'enregistrement, surtout en période de forte affluence.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget vol: </strong>A partir de 646 €/pers (A/R Paris-Kuala Lumpur)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget transports: </strong>Environ 250-350 €/pers (vols intérieurs, bus, Grab)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget repas: </strong>Environ 700-900 €/pers (cuisine locale et restaurants 3* occasionnels)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget logement: </strong>Environ 1300-1600 €/pers (hôtels 3* confortables)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget activités: </strong>Environ 250-350 €/pers (entrées, excursions, spa)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Mai à Septembre</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Climat chaud et humide, avec averses tropicales possibles</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🌡️ En août-septembre, les températures varient entre 25 et 33°C, avec une forte humidité. Prévoir des vêtements légers, respirants et un imperméable léger pour les averses.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">💳 La monnaie est le Ringgit Malaisien (MYR). Les cartes de crédit sont largement acceptées dans les villes, mais prévoyez du liquide pour les marchés et les petits commerces. Les distributeurs sont nombreux.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🛂 Pas de visa requis pour les citoyens français pour un séjour de moins de 3 mois. Un passeport valide 6 mois après la date de retour est nécessaire.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🚗 La conduite se fait à gauche. Il est recommandé d'utiliser les applications de VTC comme Grab, très efficaces et abordables, plutôt que de louer une voiture pour les déplacements urbains.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">📶 Achetez une carte SIM locale (Celcom, Maxis, Digi) ou une eSIM dès votre arrivée pour rester connecté. Le Wi-Fi est généralement disponible dans les hôtels et de nombreux cafés.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Malaisie-iw629qc873j8wl9/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://www.kayak.fr/flights/CDG-KUL/2026-08-20/2026-09-11" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🛬 Réserve ton vol</strong></a></li>
+                    
+                        <li><a href="https://www.tourism.gov.my/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📘 Tourisme Malaisie</strong></a></li>
+                    
+                        <li><a href="https://www.grab.com/my/en/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🚕 Télécharge Grab</strong></a></li>
+                    
+                        <li><a href="https://www.accuweather.com/fr/my/malaysia-weather" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🌤️ Météo Malaisie</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
