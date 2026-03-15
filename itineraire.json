@@ -1,0 +1,755 @@
+{
+  "pays": "Malaisie",
+  "drapeau": "🇲🇾",
+  "symbole": "🌺",
+  "titre": "Évasion Tropicale en Malaisie : Culture, Nature et Détente",
+  "budget_total": "Environ 3200-3500 €/personne",
+  "duree": "22 jours",
+  "date_debut": "2026-08-20",
+  "date_fin": "2026-09-11",
+  "temps_vol": "16h30 (format: Xh depuis Paris, france)",
+  "escale": "1",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée à Kuala Lumpur et première immersion",
+      "legende": "Après un long vol, la première journée est dédiée à une arrivée en douceur dans la capitale malaisienne. Installez-vous confortablement et profitez d'une balade relaxante pour vous imprégner de l'ambiance locale. Laissez-vous porter par les sons et les couleurs de cette ville vibrante.",
+      "lieu": "Kuala Lumpur",
+      "activites": [
+        "<strong>🛬</strong>: Arrivée à l'aéroport international de Kuala Lumpur (KUL).",
+        "<strong>🛏️</strong>: Transfert et installation à votre hôtel au cœur de la ville.",
+        "<strong>🚶‍♂️</strong>: Balade digestive et découverte des environs de l'hôtel, dîner léger."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "À savoir",
+          "texte": "Le décalage horaire avec la Malaisie est de +6 heures en été. Prévoyez de vous hydrater et de vous reposer pour minimiser le jet lag."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🏙️",
+      "titre": "Icônes de Kuala Lumpur et sérénité urbaine",
+      "legende": "Découvrez les symboles architecturaux de Kuala Lumpur, des tours jumelles emblématiques aux grottes sacrées de Batu Caves. La journée est équilibrée entre exploration urbaine et moments de calme, offrant un aperçu de la diversité culturelle et spirituelle de la Malaisie.",
+      "lieu": "Kuala Lumpur",
+      "activites": [
+        "<strong>🏙️</strong>: Visite des tours jumelles Petronas, symbole de la modernité malaisienne. Admirez leur grandeur depuis le parc KLCC.",
+        "<strong>🧘‍♀️</strong>: Ascension des marches colorées des grottes de Batu Caves, un site hindou sacré et impressionnant.",
+        "<strong>🛍️</strong>: Détente et shopping au centre commercial Suria KLCC ou au Central Market pour des souvenirs artisanaux."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Petronas Twin Towers, Kuala Lumpur",
+          "categorie": "Gratte-ciel",
+          "coords": { "lat": 3.1578, "lng": 101.7119 }
+        },
+        {
+          "nom_recherche": "Batu Caves, Gombak",
+          "categorie": "Site religieux",
+          "coords": { "lat": 3.2378, "lng": 101.6840 }
+        },
+        {
+          "nom_recherche": "Central Market, Kuala Lumpur",
+          "categorie": "Marché artisanal",
+          "coords": { "lat": 3.1455, "lng": 101.6968 }
+        }
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Conseil",
+          "texte": "Pour les Batu Caves, portez des vêtements respectueux (épaules et genoux couverts) et préparez-vous à monter de nombreuses marches. Des singes espiègles sont souvent présents."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🌳",
+      "titre": "Nature en ville et immersion culturelle",
+      "legende": "Explorez les poumons verts de Kuala Lumpur avec une promenade apaisante dans ses jardins botaniques. Plongez ensuite dans l'histoire et la culture malaisienne en visitant des sites emblématiques, offrant un contraste rafraîchissant avec l'agitation urbaine.",
+      "lieu": "Kuala Lumpur",
+      "activites": [
+        "<strong>🌿</strong>: Promenade relaxante dans les Jardins Botaniques Perdana, un havre de paix au cœur de la ville.",
+        "<strong>🕌</strong>: Visite de la Mosquée Jamek, l'une des plus anciennes de KL, et découverte de son architecture mauresque.",
+        "<strong>🖼️</strong>: Exploration du Musée National de Malaisie pour comprendre l'histoire et le patrimoine du pays."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Perdana Botanical Gardens, Kuala Lumpur",
+          "categorie": "Jardin",
+          "coords": { "lat": 3.1420, "lng": 101.6850 }
+        },
+        {
+          "nom_recherche": "Jamek Mosque, Kuala Lumpur",
+          "categorie": "Mosquée",
+          "coords": { "lat": 3.1488, "lng": 101.6960 }
+        },
+        {
+          "nom_recherche": "National Museum of Malaysia, Kuala Lumpur",
+          "categorie": "Musée",
+          "coords": { "lat": 3.1380, "lng": 101.6870 }
+        }
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "🌸",
+          "titre": "Détente",
+          "texte": "Les Jardins Botaniques Perdana sont parfaits pour une matinée tranquille, loin du bruit de la ville. Ne manquez pas le jardin aux orchidées."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🏛️",
+      "titre": "Architecture moderne et croisière sereine à Putrajaya",
+      "legende": "Échappez à l'agitation de la capitale pour une journée à Putrajaya, la ville administrative futuriste de la Malaisie. Admirez son architecture impressionnante et profitez d'une croisière paisible sur le lac, offrant une perspective unique sur ses monuments.",
+      "lieu": "Putrajaya",
+      "activites": [
+        "<strong>🚗</strong>: Excursion d'une journée à Putrajaya, la ville jardin et intelligente de la Malaisie.",
+        "<strong>🕌</strong>: Visite de la Mosquée Putra (Mosquée Rose) et du Perdana Putra (bureau du Premier Ministre) de l'extérieur.",
+        "<strong>🚤</strong>: Croisière relaxante sur le lac de Putrajaya pour admirer les ponts et les bâtiments depuis l'eau."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Putra Mosque, Putrajaya",
+          "categorie": "Mosquée",
+          "coords": { "lat": 2.9363, "lng": 101.6868 }
+        },
+        {
+          "nom_recherche": "Perdana Putra, Putrajaya",
+          "categorie": "Bâtiment gouvernemental",
+          "coords": { "lat": 2.9360, "lng": 101.6860 }
+        },
+        {
+          "nom_recherche": "Putrajaya Lake Cruise, Putrajaya",
+          "categorie": "Activité nautique",
+          "coords": { "lat": 2.9360, "lng": 101.6850 }
+        }
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "📸",
+          "titre": "Photographie",
+          "texte": "Les ponts de Putrajaya offrent des opportunités de photos spectaculaires, surtout au coucher du soleil. La Mosquée Putra est particulièrement photogénique."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🚌",
+      "titre": "Voyage vers Malacca et charme historique",
+      "legende": "Embarquez pour un voyage vers Malacca, une ville classée au patrimoine mondial de l'UNESCO, riche en histoire et en culture. Installez-vous et commencez à explorer ses rues pittoresques, imprégnées de l'héritage colonial et de l'influence des différentes civilisations.",
+      "lieu": "Malacca",
+      "activites": [
+        "<strong>🚌</strong>: Transfert en bus confortable de Kuala Lumpur à Malacca (environ 2-3 heures).",
+        "<strong>🛏️</strong>: Installation à votre hôtel dans le quartier historique de Malacca.",
+        "<strong>🚶‍♀️</strong>: Première balade décontractée sur Jonker Street, le cœur vibrant de la vieille ville, et dîner."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Jonker Street, Malacca",
+          "categorie": "Rue commerçante",
+          "coords": { "lat": 2.1960, "lng": 102.2460 }
+        }
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "🍽️",
+          "titre": "Gastronomie",
+          "texte": "Malacca est réputée pour sa cuisine Nyonya. Ne manquez pas de goûter le 'Chicken Rice Ball' ou le 'Laksa Nyonya' sur Jonker Street."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "📜",
+      "titre": "Trésors historiques de Malacca",
+      "legende": "Plongez au cœur de l'histoire de Malacca en explorant ses sites emblématiques. Des vestiges coloniaux aux temples anciens, chaque coin de rue raconte une histoire. Terminez la journée par une croisière paisible sur la rivière, offrant une perspective différente sur la ville.",
+      "lieu": "Malacca",
+      "activites": [
+        "<strong>⛪</strong>: Visite du Stadthuys (Hôtel de Ville hollandais) et de l'église du Christ, symboles de l'ère coloniale.",
+        "<strong>🏰</strong>: Exploration des ruines de la forteresse A Famosa et de l'église Saint-Paul, offrant des vues panoramiques.",
+        "<strong>🛶</strong>: Croisière relaxante sur la rivière Malacca, admirant les fresques murales et l'architecture le long des berges."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Stadthuys, Malacca",
+          "categorie": "Bâtiment historique",
+          "coords": { "lat": 2.1940, "lng": 102.2480 }
+        },
+        {
+          "nom_recherche": "A Famosa, Malacca",
+          "categorie": "Ruines historiques",
+          "coords": { "lat": 2.1920, "lng": 102.2490 }
+        },
+        {
+          "nom_recherche": "Malacca River Cruise, Malacca",
+          "categorie": "Activité nautique",
+          "coords": { "lat": 2.1950, "lng": 102.2470 }
+        }
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "🚶‍♂️",
+          "titre": "Exploration",
+          "texte": "Malacca est une ville très agréable à explorer à pied. Prévoyez de bonnes chaussures et de l'eau, surtout en milieu de journée."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "☕",
+      "titre": "Matinée tranquille et voyage vers les Cameron Highlands",
+      "legende": "Profitez d'une dernière matinée paisible à Malacca pour flâner ou revisiter un lieu coup de cœur. Ensuite, préparez-vous pour un changement de décor radical en vous dirigeant vers les Cameron Highlands, une région montagneuse réputée pour ses plantations de thé et son climat frais.",
+      "lieu": "Cameron Highlands",
+      "activites": [
+        "<strong>🚶‍♀️</strong>: Matinée libre à Malacca pour un dernier café ou l'achat de souvenirs.",
+        "<strong>🚌</strong>: Transfert en bus de Malacca à Tanah Rata (Cameron Highlands), un trajet pittoresque (environ 4-5 heures).",
+        "<strong>🛏️</strong>: Installation à l'hôtel à Tanah Rata et soirée relaxante dans l'air frais des montagnes."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Tanah Rata, Cameron Highlands",
+          "categorie": "Ville",
+          "coords": { "lat": 4.4700, "lng": 101.3800 }
+        }
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🌡️",
+          "titre": "Climat",
+          "texte": "Les Cameron Highlands ont un climat beaucoup plus frais que le reste de la Malaisie. Prévoyez une petite laine pour les soirées et les matinées."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🍵",
+      "titre": "Plantations de thé et paysages verdoyants",
+      "legende": "Réveillez-vous au cœur des Cameron Highlands et laissez-vous enchanter par les paysages vallonnés des plantations de thé. Profitez d'une visite guidée pour découvrir le processus de fabrication du thé et dégustez une tasse fraîchement infusée, entouré par la nature luxuriante.",
+      "lieu": "Cameron Highlands",
+      "activites": [
+        "<strong>🌿</strong>: Visite de la plantation de thé Boh Sungai Palas, avec une promenade douce à travers les champs de thé.",
+        "<strong>☕</strong>: Dégustation de thé et pause gourmande au café de la plantation, avec vue imprenable.",
+        "<strong>🍓</strong>: Visite d'une ferme de fraises pour cueillir vos propres fruits ou déguster des produits locaux à base de fraises."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Boh Tea Centre Sungai Palas, Cameron Highlands",
+          "categorie": "Plantation de thé",
+          "coords": { "lat": 4.5160, "lng": 101.4000 }
+        },
+        {
+          "nom_recherche": "Big Red Strawberry Farm, Brinchang",
+          "categorie": "Ferme",
+          "coords": { "lat": 4.5000, "lng": 101.3800 }
+        }
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "🚶‍♀️",
+          "titre": "Randonnée douce",
+          "texte": "De nombreux sentiers de randonnée doux sont disponibles dans les plantations de thé. C'est une excellente façon de profiter du paysage sans effort excessif."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🦋",
+      "titre": "Forêt moussue et jardins fleuris",
+      "legende": "Explorez la mystérieuse Forêt Moussue, un écosystème unique où la nature règne en maître. Poursuivez votre journée par la découverte de jardins colorés, offrant une expérience sensorielle apaisante et une immersion totale dans la biodiversité des Cameron Highlands.",
+      "lieu": "Cameron Highlands",
+      "activites": [
+        "<strong>🌳</strong>: Promenade guidée (facultative) dans la Forêt Moussue (Mossy Forest), une expérience féerique et rafraîchissante.",
+        "<strong>🦋</strong>: Visite d'une ferme aux papillons ou d'un jardin de fleurs pour admirer la faune et la flore locales.",
+        "<strong>💆‍♀️</strong>: Après-midi libre pour se détendre à l'hôtel, profiter d'un massage ou explorer Tanah Rata à votre rythme."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Mossy Forest, Cameron Highlands",
+          "categorie": "Forêt",
+          "coords": { "lat": 4.5100, "lng": 101.4000 }
+        },
+        {
+          "nom_recherche": "Butterfly Garden, Cameron Highlands",
+          "categorie": "Jardin",
+          "coords": { "lat": 4.5000, "lng": 101.3900 }
+        }
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "👟",
+          "titre": "Équipement",
+          "texte": "Pour la Forêt Moussue, prévoyez des chaussures confortables et antidérapantes, car les sentiers peuvent être humides et glissants."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "✈️",
+      "titre": "Vol vers Penang et charme de George Town",
+      "legende": "Après une dernière bouffée d'air frais des montagnes, prenez la route vers l'aéroport pour un court vol vers Penang. Arrivez à George Town, une ville vibrante et classée à l'UNESCO, célèbre pour son art de rue et sa cuisine de rue exceptionnelle. Installez-vous et commencez à explorer.",
+      "lieu": "Penang (George Town)",
+      "activites": [
+        "<strong>🚗</strong>: Transfert des Cameron Highlands à l'aéroport d'Ipoh (environ 2-3 heures).",
+        "<strong>✈️</strong>: Vol domestique d'Ipoh à Penang (environ 30-45 minutes).",
+        "<strong>🛏️</strong>: Installation à l'hôtel à George Town et première exploration des rues animées, à la recherche de street art."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "George Town, Penang",
+          "categorie": "Ville historique",
+          "coords": { "lat": 5.4160, "lng": 100.3320 }
+        }
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "🍜",
+          "titre": "Cuisine de rue",
+          "texte": "Penang est un paradis pour les gourmands. Ne manquez pas de goûter le Char Kway Teow, l'Assam Laksa ou le Hokkien Mee dans les hawker centers."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🎨",
+      "titre": "Art de rue et patrimoine colonial",
+      "legende": "Plongez dans l'atmosphère unique de George Town en partant à la chasse aux célèbres fresques murales et installations en fer forgé. Découvrez l'héritage colonial de la ville à travers ses bâtiments historiques et ses quartiers ethniques, offrant un mélange fascinant de cultures.",
+      "lieu": "Penang (George Town)",
+      "activites": [
+        "<strong>🖼️</strong>: Chasse aux trésors artistiques : découverte des célèbres fresques murales et sculptures en fer forgé de George Town.",
+        "<strong>🏘️</strong>: Visite des Clan Jetties, des villages sur pilotis habités par des familles chinoises depuis des générations.",
+        "<strong>🏛️</strong>: Exploration de la Cheong Fatt Tze Mansion (Blue Mansion), un joyau architectural chinois."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Street Art, George Town",
+          "categorie": "Art de rue",
+          "coords": { "lat": 5.4150, "lng": 100.3350 }
+        },
+        {
+          "nom_recherche": "Chew Jetty, George Town",
+          "categorie": "Village sur pilotis",
+          "coords": { "lat": 5.4130, "lng": 100.3370 }
+        },
+        {
+          "nom_recherche": "Cheong Fatt Tze Mansion, George Town",
+          "categorie": "Maison historique",
+          "coords": { "lat": 5.4200, "lng": 100.3340 }
+        }
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "🚶‍♀️",
+          "titre": "Conseil",
+          "texte": "Louez un vélo ou marchez pour explorer George Town. C'est la meilleure façon de découvrir ses ruelles cachées et ses trésors artistiques."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "🙏",
+      "titre": "Temples majestueux et vues panoramiques",
+      "legende": "Montez au sommet de Penang Hill pour profiter d'une vue imprenable sur l'île et la ville. Ensuite, explorez le magnifique temple de Kek Lok Si, un complexe bouddhiste impressionnant. La journée est un mélange de spiritualité, de paysages grandioses et de sérénité.",
+      "lieu": "Penang (George Town)",
+      "activites": [
+        "<strong>⛰️</strong>: Ascension de Penang Hill en funiculaire pour profiter de l'air frais et des vues panoramiques sur George Town.",
+        "<strong>🙏</strong>: Visite du temple Kek Lok Si, le plus grand temple bouddhiste de Malaisie, avec ses pagodes et statues impressionnantes.",
+        "<strong>🌳</strong>: Promenade relaxante dans les Jardins Botaniques de Penang, un espace vert paisible."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Penang Hill, Penang",
+          "categorie": "Montagne",
+          "coords": { "lat": 5.4000, "lng": 100.2700 }
+        },
+        {
+          "nom_recherche": "Kek Lok Si Temple, Air Itam",
+          "categorie": "Temple",
+          "coords": { "lat": 5.3990, "lng": 100.2730 }
+        },
+        {
+          "nom_recherche": "Penang Botanic Gardens, George Town",
+          "categorie": "Jardin",
+          "coords": { "lat": 5.4300, "lng": 100.2900 }
+        }
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "☀️",
+          "titre": "Météo",
+          "texte": "Le sommet de Penang Hill est souvent plus frais. Prévoyez une petite veste si vous êtes sensible au froid."
+        }
+      ]
+    },
+    {
+      "jour": 13,
+      "symbole": "🏖️",
+      "titre": "Détente balnéaire à Batu Ferringhi",
+      "legende": "Échappez à l'agitation de la ville pour une journée de pure détente sur les plages de Batu Ferringhi. Profitez du soleil, de la mer et des activités nautiques douces. Terminez la journée par un dîner les pieds dans le sable, en admirant le coucher de soleil.",
+      "lieu": "Penang (Batu Ferringhi)",
+      "activites": [
+        "<strong>🚗</strong>: Transfert vers Batu Ferringhi, la principale zone balnéaire de Penang.",
+        "<strong>🏖️</strong>: Matinée de détente sur la plage, baignade ou lecture à l'ombre d'un palmier.",
+        "<strong>🌅</strong>: Promenade sur le marché de nuit de Batu Ferringhi et dîner de fruits de mer frais au bord de la mer."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Batu Ferringhi Beach, Penang",
+          "categorie": "Plage",
+          "coords": { "lat": 5.4690, "lng": 100.2500 }
+        },
+        {
+          "nom_recherche": "Batu Ferringhi Night Market, Penang",
+          "categorie": "Marché de nuit",
+          "coords": { "lat": 5.4700, "lng": 100.2480 }
+        }
+      ],
+      "illustration": "jour13.jpg",
+      "encarts": [
+        {
+          "symbole": "🧴",
+          "titre": "Protection",
+          "texte": "N'oubliez pas votre crème solaire, un chapeau et des lunettes de soleil. Le soleil tropical est intense."
+        }
+      ]
+    },
+    {
+      "jour": 14,
+      "symbole": "✈️",
+      "titre": "Vol vers Langkawi et paradis insulaire",
+      "legende": "Quittez Penang pour un court vol vers Langkawi, un archipel idyllique réputé pour ses plages de sable blanc et ses forêts tropicales. Installez-vous dans votre hébergement et laissez-vous bercer par l'ambiance décontractée de cette île paradisiaque, parfaite pour la relaxation.",
+      "lieu": "Langkawi",
+      "activites": [
+        "<strong>✈️</strong>: Vol domestique de Penang à Langkawi (environ 30 minutes).",
+        "<strong>🛏️</strong>: Transfert et installation à votre hôtel à Langkawi, idéalement près d'une plage comme Cenang Beach.",
+        "<strong>🌅</strong>: Soirée libre, dîner au bord de la mer et promenade sur la plage au coucher du soleil."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Langkawi International Airport, Langkawi",
+          "categorie": "Aéroport",
+          "coords": { "lat": 6.3370, "lng": 99.7280 }
+        },
+        {
+          "nom_recherche": "Cenang Beach, Langkawi",
+          "categorie": "Plage",
+          "coords": { "lat": 6.2900, "lng": 99.7280 }
+        }
+      ],
+      "illustration": "jour14.jpg",
+      "encarts": [
+        {
+          "symbole": "💸",
+          "titre": "Duty-Free",
+          "texte": "Langkawi est une île hors taxes. Profitez-en pour acheter des chocolats, de l'alcool ou des parfums à des prix avantageux."
+        }
+      ]
+    },
+    {
+      "jour": 15,
+      "symbole": "🚠",
+      "titre": "SkyBridge et vues à couper le souffle",
+      "legende": "Découvrez l'une des attractions les plus spectaculaires de Langkawi : le téléphérique et le SkyBridge. Montez au sommet pour des vues panoramiques incroyables sur l'archipel et la forêt tropicale. La journée est dédiée à l'émerveillement et à la contemplation des paysages.",
+      "lieu": "Langkawi",
+      "activites": [
+        "<strong>🚠</strong>: Ascension en téléphérique (SkyCab) jusqu'au sommet du mont Machinchang, offrant des vues spectaculaires.",
+        "<strong>🌉</strong>: Traversée du Langkawi SkyBridge, un pont suspendu courbé au-dessus de la jungle, pour des sensations douces et des panoramas uniques.",
+        "<strong>🛍️</strong>: Exploration de l'Oriental Village, un complexe de boutiques et de restaurants au pied du téléphérique."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Langkawi SkyCab, Langkawi",
+          "categorie": "Téléphérique",
+          "coords": { "lat": 6.3900, "lng": 99.6600 }
+        },
+        {
+          "nom_recherche": "Langkawi SkyBridge, Langkawi",
+          "categorie": "Pont suspendu",
+          "coords": { "lat": 6.3900, "lng": 99.6600 }
+        },
+        {
+          "nom_recherche": "Oriental Village, Langkawi",
+          "categorie": "Centre commercial",
+          "coords": { "lat": 6.3900, "lng": 99.6600 }
+        }
+      ],
+      "illustration": "jour15.jpg",
+      "encarts": [
+        {
+          "symbole": "⚠️",
+          "titre": "Attention",
+          "texte": "Le SkyBridge peut être fermé en cas de vent fort ou de pluie. Vérifiez les conditions météorologiques avant de vous y rendre."
+        }
+      ]
+    },
+    {
+      "jour": 16,
+      "symbole": "🏝️",
+      "titre": "Aventure insulaire et plages secrètes",
+      "legende": "Embarquez pour une excursion relaxante d'île en île, découvrant des plages isolées et des lagons cachés. Profitez de la baignade, de la plongée avec tuba et de l'observation des aigles. C'est une journée dédiée à la beauté naturelle de l'archipel de Langkawi et à la tranquillité.",
+      "lieu": "Langkawi",
+      "activites": [
+        "<strong>🚤</strong>: Excursion d'île en île (Island Hopping Tour) vers des îles comme Dayang Bunting et Beras Basah.",
+        "<strong>🏊‍♀️</strong>: Baignade et détente sur des plages immaculées, avec possibilité de plongée avec tuba douce.",
+        "<strong>🦅</strong>: Observation des aigles, emblèmes de Langkawi, lors d'une séance de nourrissage (à distance respectueuse)."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Dayang Bunting Marble Geoforest Park, Langkawi",
+          "categorie": "Parc naturel",
+          "coords": { "lat": 6.2000, "lng": 99.7800 }
+        },
+        {
+          "nom_recherche": "Beras Basah Island, Langkawi",
+          "categorie": "Île",
+          "coords": { "lat": 6.2500, "lng": 99.7000 }
+        }
+      ],
+      "illustration": "jour16.jpg",
+      "encarts": [
+        {
+          "symbole": "🐠",
+          "titre": "Faune marine",
+          "texte": "Les eaux autour de Langkawi abritent une vie marine riche. N'oubliez pas votre masque et tuba pour explorer les fonds marins."
+        }
+      ]
+    },
+    {
+      "jour": 17,
+      "symbole": " mangroves",
+      "titre": "Exploration des mangroves et sources chaudes",
+      "legende": "Partez à la découverte de l'écosystème fascinant des mangroves du Kilim Geoforest Park lors d'une croisière paisible. Observez la faune locale et terminez la journée par une expérience relaxante aux sources chaudes naturelles, pour une immersion totale dans la nature de Langkawi.",
+      "lieu": "Langkawi",
+      "activites": [
+        "<strong>🛶</strong>: Croisière relaxante dans les mangroves du Kilim Geoforest Park, observation de la faune (singes, oiseaux).",
+        "<strong>♨️</strong>: Détente aux sources chaudes naturelles de Ayer Hangat, pour un moment de relaxation et de bien-être.",
+        "<strong>💆‍♀️</strong>: Après-midi libre pour profiter de la plage, d'un massage ou d'une activité douce de votre choix."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Kilim Geoforest Park, Langkawi",
+          "categorie": "Parc naturel",
+          "coords": { "lat": 6.4300, "lng": 99.8500 }
+        },
+        {
+          "nom_recherche": "Ayer Hangat Village, Langkawi",
+          "categorie": "Sources chaudes",
+          "coords": { "lat": 6.4000, "lng": 99.8000 }
+        }
+      ],
+      "illustration": "jour17.jpg",
+      "encarts": [
+        {
+          "symbole": "🦟",
+          "titre": "Insectes",
+          "texte": "Lors de la visite des mangroves, prévoyez un répulsif anti-moustiques, surtout en fin de journée."
+        }
+      ]
+    },
+    {
+      "jour": 18,
+      "symbole": "✈️",
+      "titre": "Retour à Kuala Lumpur et soirée libre",
+      "legende": "Après avoir profité des charmes de Langkawi, il est temps de retourner à Kuala Lumpur. Le vol domestique vous ramènera à la capitale pour une soirée libre. Profitez-en pour vous reposer, faire du shopping de dernière minute ou savourer un dîner mémorable.",
+      "lieu": "Kuala Lumpur",
+      "activites": [
+        "<strong>✈️</strong>: Vol domestique de Langkawi à Kuala Lumpur (environ 1 heure).",
+        "<strong>🛏️</strong>: Transfert et installation à votre hôtel à Kuala Lumpur.",
+        "<strong>🌃</strong>: Soirée libre pour vous détendre, dîner dans un quartier animé comme Bukit Bintang ou faire du shopping."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Kuala Lumpur International Airport, Sepang",
+          "categorie": "Aéroport",
+          "coords": { "lat": 2.7456, "lng": 101.7072 }
+        },
+        {
+          "nom_recherche": "Bukit Bintang, Kuala Lumpur",
+          "categorie": "Quartier animé",
+          "coords": { "lat": 3.1470, "lng": 101.7110 }
+        }
+      ],
+      "illustration": "jour18.jpg",
+      "encarts": [
+        {
+          "symbole": "🛍️",
+          "titre": "Shopping",
+          "texte": "Kuala Lumpur offre de nombreuses options de shopping, des centres commerciaux de luxe aux marchés locaux. C'est le moment idéal pour les derniers souvenirs."
+        }
+      ]
+    },
+    {
+      "jour": 19,
+      "symbole": "💆‍♀️",
+      "titre": "Journée bien-être et relaxation",
+      "legende": "Offrez-vous une journée de pure relaxation et de bien-être après ces jours d'exploration. Profitez d'un spa traditionnel malaisien, d'une séance de yoga ou d'une simple promenade dans un parc. C'est l'occasion de recharger vos batteries avant le départ.",
+      "lieu": "Kuala Lumpur",
+      "activites": [
+        "<strong>💆‍♀️</strong>: Matinée dédiée à un soin spa traditionnel malaisien ou un massage relaxant.",
+        "<strong>🧘‍♀️</strong>: Séance de yoga ou méditation dans un centre de bien-être ou un parc paisible.",
+        "<strong>📚</strong>: Après-midi libre pour lire, se détendre au bord de la piscine de l'hôtel ou revisiter un lieu coup de cœur."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "The Spa, Mandarin Oriental Kuala Lumpur",
+          "categorie": "Spa",
+          "coords": { "lat": 3.1570, "lng": 101.7120 }
+        },
+        {
+          "nom_recherche": "KLCC Park, Kuala Lumpur",
+          "categorie": "Parc",
+          "coords": { "lat": 3.1560, "lng": 101.7120 }
+        }
+      ],
+      "illustration": "jour19.jpg",
+      "encarts": [
+        {
+          "symbole": "🌸",
+          "titre": "Bien-être",
+          "texte": "De nombreux hôtels à Kuala Lumpur proposent des spas de qualité. Renseignez-vous à l'avance pour réserver votre soin."
+        }
+      ]
+    },
+    {
+      "jour": 20,
+      "symbole": "🍜",
+      "titre": "Immersion culinaire et adieux",
+      "legende": "Plongez une dernière fois dans la richesse de la cuisine malaisienne avec un cours de cuisine ou une exploration des marchés locaux. Profitez d'un dîner d'adieu mémorable, savourant les saveurs qui ont marqué votre voyage. C'est une journée pour célébrer les découvertes culinaires.",
+      "lieu": "Kuala Lumpur",
+      "activites": [
+        "<strong>🧑‍🍳</strong>: Cours de cuisine malaisienne pour apprendre à préparer quelques spécialités locales (optionnel).",
+        "<strong>🌶️</strong>: Visite d'un marché local pour découvrir les épices et ingrédients typiques de la cuisine malaisienne.",
+        "<strong>🍽️</strong>: Dîner d'adieu dans un restaurant raffiné ou un hawker center pour une dernière expérience culinaire authentique."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "LaZat Cooking Class, Kuala Lumpur",
+          "categorie": "Cours de cuisine",
+          "coords": { "lat": 3.1400, "lng": 101.6900 }
+        },
+        {
+          "nom_recherche": "Chow Kit Market, Kuala Lumpur",
+          "categorie": "Marché",
+          "coords": { "lat": 3.1650, "lng": 101.6970 }
+        }
+      ],
+      "illustration": "jour20.jpg",
+      "encarts": [
+        {
+          "symbole": "🌶️",
+          "titre": "Saveurs",
+          "texte": "La cuisine malaisienne est un mélange d'influences malaises, chinoises et indiennes. N'hésitez pas à goûter à tout, même si c'est épicé !"
+        }
+      ]
+    },
+    {
+      "jour": 21,
+      "symbole": "🎁",
+      "titre": "Derniers achats et préparation au départ",
+      "legende": "Profitez de cette dernière journée complète pour faire les derniers achats de souvenirs ou revisiter un quartier que vous avez particulièrement apprécié. Préparez tranquillement vos bagages, en vous remémorant les merveilleux moments passés en Malaisie. Une journée douce avant le grand départ.",
+      "lieu": "Kuala Lumpur",
+      "activites": [
+        "<strong>🛍️</strong>: Matinée dédiée aux derniers achats de souvenirs ou de produits locaux dans les centres commerciaux ou marchés.",
+        "<strong>🚶‍♀️</strong>: Promenade tranquille dans un quartier que vous avez aimé ou découverte d'un nouveau coin de la ville.",
+        "<strong>🧳</strong>: Préparation des bagages et dîner léger avant le vol du lendemain."
+      ],
+      "illustration": "jour21.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Souvenirs",
+          "texte": "Le Central Market est un excellent endroit pour trouver des souvenirs artisanaux, des batiks aux sculptures en bois."
+        }
+      ]
+    },
+    {
+      "jour": 22,
+      "symbole": "🛫",
+      "titre": "Départ de Kuala Lumpur",
+      "legende": "C'est le jour du départ. Profitez d'un dernier petit-déjeuner malaisien avant de vous rendre à l'aéroport. Emportez avec vous les souvenirs inoubliables de ce voyage en Malaisie, un pays aux mille facettes, entre modernité, traditions et nature luxuriante.",
+      "lieu": "Kuala Lumpur",
+      "activites": [
+        "<strong>🍳</strong>: Dernier petit-déjeuner malaisien à l'hôtel ou dans un café local.",
+        "<strong>🚗</strong>: Transfert à l'aéroport international de Kuala Lumpur (KUL).",
+        "<strong>🛫</strong>: Enregistrement et vol retour vers Paris."
+      ],
+      "illustration": "jour22.jpg",
+      "encarts": [
+        {
+          "symbole": "⏰",
+          "titre": "Timing",
+          "texte": "Prévoyez suffisamment de temps pour le transfert vers l'aéroport et les formalités d'enregistrement, surtout en période de forte affluence."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    { "titre": "Budget vol:", "legende": "A partir de 646 €/pers (A/R Paris-Kuala Lumpur)", "symbole": "🛬" },
+    { "titre": "Budget transports:", "legende": "Environ 250-350 €/pers (vols intérieurs, bus, Grab)", "symbole": "🚆" },
+    { "titre": "Budget repas:", "legende": "Environ 700-900 €/pers (cuisine locale et restaurants 3* occasionnels)", "symbole": "🥗" },
+    { "titre": "Budget logement:", "legende": "Environ 1300-1600 €/pers (hôtels 3* confortables)", "symbole": "🛏️" },
+    { "titre": "Budget activités:", "legende": "Environ 250-350 €/pers (entrées, excursions, spa)", "symbole": "🎭" }
+  ],
+  "periodes_ideales": [
+    { "titre": "Mai à Septembre", "symbole": "☀️" },
+    { "titre": "Climat chaud et humide, avec averses tropicales possibles", "symbole": "🌧️" }
+  ],
+  "infos_pratiques": [
+    { "titre": "En août-septembre, les températures varient entre 25 et 33°C, avec une forte humidité. Prévoir des vêtements légers, respirants et un imperméable léger pour les averses.", "symbole": "🌡️" },
+    { "titre": "La monnaie est le Ringgit Malaisien (MYR). Les cartes de crédit sont largement acceptées dans les villes, mais prévoyez du liquide pour les marchés et les petits commerces. Les distributeurs sont nombreux.", "symbole": "💳" },
+    { "titre": "Pas de visa requis pour les citoyens français pour un séjour de moins de 3 mois. Un passeport valide 6 mois après la date de retour est nécessaire.", "symbole": "🛂" },
+    { "titre": "La conduite se fait à gauche. Il est recommandé d'utiliser les applications de VTC comme Grab, très efficaces et abordables, plutôt que de louer une voiture pour les déplacements urbains.", "symbole": "🚗" },
+    { "titre": "Achetez une carte SIM locale (Celcom, Maxis, Digi) ou une eSIM dès votre arrivée pour rester connecté. Le Wi-Fi est généralement disponible dans les hôtels et de nombreux cafés.", "symbole": "📶" }
+  ],
+  "infos_decallees": [
+    {
+      "symbole": "💡",
+      "titre": "Le saviez-vous ?",
+      "texte": "Le durian, surnommé le \"roi des fruits\", est tellement odorant qu'il est souvent interdit dans les hôtels, les transports en commun et même certains taxis en Malaisie. Son goût est pourtant très apprécié des locaux !"
+    },
+    {
+      "symbole": "🙃",
+      "titre": "Insolite",
+      "texte": "Le \"teh tarik\" (thé tiré) est une boisson nationale malaisienne. Les vendeurs la préparent en versant le thé d'un récipient à l'autre à une certaine hauteur, créant une mousse onctueuse et rafraîchissante. C'est un véritable spectacle à observer !"
+    }
+  ],
+  "specialites_culinaires": [
+    {
+      "symbole": "🍴",
+      "titre": "Nasi Lemak",
+      "description": "Le plat national malaisien ! Du riz cuit dans du lait de coco, servi avec du sambal (sauce pimentée), des anchois frits, des cacahuètes grillées, un œuf dur et des concombres. Un délice pour le petit-déjeuner ou à tout moment de la journée."
+    },
+    {
+      "symbole": "🍜",
+      "titre": "Assam Laksa (Penang Laksa)",
+      "description": "Une soupe de nouilles aigre-douce et épicée, typique de Penang. Son bouillon à base de poisson (généralement du maquereau) est relevé par du tamarin, de la citronnelle et du piment. Un festival de saveurs en bouche !"
+    },
+    {
+      "symbole": "🍢",
+      "titre": "Satay",
+      "description": "Des brochettes de viande (poulet, bœuf ou agneau) marinées et grillées à la perfection, servies avec une sauce aux cacahuètes onctueuse et légèrement épicée. Un classique de la cuisine de rue malaisienne, parfait pour une collation ou un repas léger."
+    }
+  ],
+  "liens_utiles": [
+    { "legende": "Vols", "titre": "Réserve ton vol", "url": "https://www.kayak.fr/flights/CDG-KUL/2026-08-20/2026-09-11", "symbole": "🛬" },
+    { "legende": "Infos officielles et inspirations", "titre": "Tourisme Malaisie", "url": "https://www.tourism.gov.my/", "symbole": "📘" },
+    { "legende": "Application VTC (Grab)", "titre": "Télécharge Grab", "url": "https://www.grab.com/my/en/", "symbole": "🚕" },
+    { "legende": "Météo", "titre": "Météo Malaisie", "url": "https://www.accuweather.com/fr/my/malaysia-weather", "symbole": "🌤️" }
+  ]
+}
